@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Runator</title>
+    <style>
+        .sucesso {
+            color: #63ee48;
+        }
+        .erro {
+            color: #850000;
+        }
+    </style>
+</head>
+<body>
+    <h1>Resultado do envio</h1>
+    <p>{{result.description}}: <span class="{{#if result.success}}sucesso{{else}}erro{{/if}}">{{#if result.success}}sucesso{{else}}erro{{/if}}</span></p>
+    <pre>{{result.content}}</pre>
+</body>
+</html>

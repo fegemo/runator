@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Runator</title>
+</head>
+<body>
+  <form action="/submit" method="POST" enctype="multipart/form-data">
+    <input type="file" name="compressed-c-project-file" id="compressed-c-project-file">
+    <button>Submit</button>
+  </form>
+  <progress max="100" value="0" id="progress-upload">0% completo</progress>
+  <pre id="console">
+
+  </pre>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/js/submit.js"></script>
+</body>
+</html>
